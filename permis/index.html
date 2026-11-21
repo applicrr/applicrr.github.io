@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr"><head><meta charset="utf-8">
+<html lang="fr"><head><script>(function(){try{if(sessionStorage.getItem("capAccueil")==="1")return;fetch("/",{method:"HEAD",cache:"no-store"}).then(function(r){if(r.ok)location.replace("/");}).catch(function(){});}catch(e){}})();</script><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Cap sur le permis : réussir le code du permis bateau côtier</title>
 <meta name="description" content="Préparez le code du permis bateau option côtière : cours, fiches, jeux de balisage, QCM corrigés et examens blancs de 40 questions.">
@@ -571,6 +571,10 @@ img{max-width:100%}
 .home-link svg{width:20px;height:20px}
 @media (max-width:640px){.twin{display:none}}
 @media (max-width:640px){.twincard{flex-wrap:wrap;gap:14px;padding:18px}.twincard>svg:first-child{width:52px;height:52px}.twincard b{font-size:24px}.twincard .tw-btn{flex:1 1 100%;text-align:center}}
+/* 6 onglets + Accueil + Instagram sur une seule ligne en grand écran */
+@media (min-width:641px){.tabs{gap:2px}.tabs a{padding-inline:11px}}
+@media (min-width:641px) and (max-width:1100px){.igtab span,.twin span{display:none}}
+@media (min-width:641px) and (max-width:900px){.tabs a{padding-inline:6px;font-size:14px}.brand .name{font-size:20px}}
 /* Balises de la question, dans la correction */
 .figbox{margin:14px 0 6px;padding:12px 12px 4px;border-radius:16px;background:var(--surface);border:2px solid var(--line)}
 .figbox .figt{font:800 12.5px var(--f-body);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 4px}
